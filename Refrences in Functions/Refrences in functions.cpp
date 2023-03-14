@@ -24,9 +24,6 @@ int main(){
     swap(a, b);\
 
     cout << a << " " << b << endl;
-
-
-
-
+    
     return 0;
 }

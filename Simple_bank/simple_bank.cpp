@@ -4,28 +4,24 @@
 //
 // Updated with classes on 13/3/23
 //
+// Updated with constructors on 14/3/23
 
 #include <iostream>
 #include <string>
+#include "simple_bank.h"
 
 using namespace std;
 
-class Bank{
-public:
-    long double deposit_money = 0;
-
-    long double withdraw_money = 0;
-
-    long double account_balance = 100;
-
-};
 
 int main(){
 
-    Bank My_bank;
+    Bank* My_bank= new Bank(50,0.5,100);
 
+    cout << My_bank->getAmountInAccount()<< endl;
+
+    /*
     cout << "How much money do you want to take out?" << endl;
-    cin >> My_bank.withdraw_money;
+    cin >> My_bank->withdraw_money;
 
     My_bank.account_balance -= My_bank.withdraw_money;
     My_bank.withdraw_money = 0;
@@ -40,7 +36,7 @@ int main(){
 
     cout << "Your account balance is: " << My_bank.account_balance << endl;
 
-
+*/
 
     return 0;
 }

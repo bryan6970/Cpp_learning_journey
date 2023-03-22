@@ -19,6 +19,8 @@ int main(){
 
     cout << My_bank->getAmountInAccount()<< endl;
 
+    delete My_bank;
+
     /*
     cout << "How much money do you want to take out?" << endl;
     cin >> My_bank->withdraw_money;

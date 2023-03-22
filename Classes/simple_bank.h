@@ -17,9 +17,13 @@ public:
         : monthly_interest(_interest_rate){
 
         monthly_deposit_amt = _monthly_deposit_amt;
-       amount_in_account = _amount_in_account;
+        amount_in_account = _amount_in_account;
 
     };
+
+    ~Bank(){
+        std:: cout << "Bye world" << std:: endl;
+    }
 
     long double getMonthlyDepositAmt(){
         return monthly_deposit_amt;

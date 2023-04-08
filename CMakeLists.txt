@@ -26,3 +26,5 @@ add_executable(Hash_map "datatypes and loops/Hash map.cpp")
 
 add_executable(Employee_management "Beginner Projects/Employee management/Employee mangement.cpp")
 
+add_executable(STL STL.cpp)
+
